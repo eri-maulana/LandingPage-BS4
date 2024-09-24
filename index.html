@@ -1,55 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page - Bootstrap 4</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Bootstrap 4 Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- My Style Css -->
     <style>
-        body {
-            padding-top: 56px;
-        }
-        .jumbotron {
-            background-color: cadetblue;
-        }
+      body {
+        padding-top: 56px;
+      }
+      .jumbotron {
+        background-color: cadetblue;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigasi Bar -->
-     <nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="images/logo.png" width="200" alt=""></a>
 
-     </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-     <!-- Header -->
-      <header class="jumbotron">
-        
-      </header>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#services" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#product" class="nav-link">Product</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-      <!-- Service -->
-       <section id="services">
+    <!-- Header -->
+    <header class="jumbotron"></header>
 
-       </section>
+    <!-- Service -->
+    <section id="services"></section>
 
-       <!-- Product -->
-       <section id="product">
+    <!-- Product -->
+    <section id="product"></section>
 
-       </section>
+    <!-- About -->
+    <section id="about"></section>
 
-       <!-- About -->
-       <section id="about">
+    <!-- Contact -->
+    <section id="contact"></section>
 
-       </section>
+    <!-- Footer -->
+    <footer></footer>
 
-       <!-- Contact -->
-       <section id="contact">
 
-       </section>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
 
-       <!-- Footer -->
-        <footer>
+    <!-- Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
 
-        </footer>
-
-        <script src="js/bootstrap.min.js"></script>
-</body>
+    <!-- Bootstrap 4 JS-->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
