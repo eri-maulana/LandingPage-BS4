@@ -17,7 +17,7 @@
         text-shadow: #000 1px 1px;
       }
       .background-header {
-        background-image: url('images/banner2.jpg');
+        background-image: url("images/banner2.jpg");
         background-color: #fafbfc;
         height: 400px;
         background-position: center;
@@ -25,65 +25,158 @@
         background-size: cover;
         position: relative;
       }
-      .btn-primer{
+      .btn-primer {
         background-color: #00bd8e;
         border-color: #fff;
         color: #fff;
         text-shadow: 0px 0px;
       }
-      .btn-primer:hover{
+      .btn-primer:hover {
         background-color: #038c6a;
         color: #eee;
         text-shadow: 0px 0px;
+      }
+      .service-style {
+        margin-top: 15px;
+        background-color: #fafbfc;
+      }
+      .text-green {
+        color: #0b9b6b;
+      }
+      .bg-red {
+        background-color: #f25757;
+      }
+      .judul-service:before,
+      .judul-service:after {
+        background-color: #0b9b6b;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+      }
+      .judul-service::before {
+        right: 0.5em;
+        margin-left: -50%;
+      }
+      .judul-service::after {
+        left: 0.5em;
+        margin-right: -50%;
       }
     </style>
   </head>
   <body>
     <!-- Navigasi Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a href="index.html" class="navbar-brand"><img src="images/logo.png"  alt=""></a>
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><img src="images/logo.png" alt=""
+        /></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#services" class="nav-link">Service</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#product" class="nav-link">Product</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#product" class="nav-link">Product</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Header -->
     <section class="jumbotron jumbotron-fluid background-header">
       <div class="container-fluid text-center">
-        <h1 class="display-3 " style="color: aliceblue;">Solusi Terbaik Belajar Pemrograman.~</h1>
-        <p class="lead" style="font-weight: bold;color: #fff;">Kami menyediakan banyak modul yang kamu butuhkan untuk belajar pemrograman dari tingkat dasar sampai mahir.</p>
+        <h1 class="display-3" style="color: aliceblue">
+          Solusi Terbaik Belajar Pemrograman.~
+        </h1>
+        <p class="lead" style="font-weight: bold; color: #fff">
+          Kami menyediakan banyak modul yang kamu butuhkan untuk belajar
+          pemrograman dari tingkat dasar sampai mahir.
+        </p>
         <p>
-          <a href="#" class="btn btn-primer btn-lg " role="button">Gabung Segera!</a>
-          <a href="#" class="btn btn-secondary btn-lg " style="text-shadow: 0px 0px;" role="button">Pelajari Selengkapnya</a>
+          <a href="#" class="btn btn-primer btn-lg" role="button"
+            >Gabung Segera!</a
+          >
+          <a
+            href="#"
+            class="btn btn-secondary btn-lg"
+            style="text-shadow: 0px 0px"
+            role="button"
+            >Pelajari Selengkapnya</a
+          >
         </p>
       </div>
     </section>
 
     <!-- Service -->
-    <section id="services"></section>
+    <section id="services" class="container-fluid service-style ">
+      <div class="row text-center">
+        <div class="col-12 pb-4">
+          <h2 class="display-4 judul-service">Mengapa Memilih Kami?</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fa-solid fa-list fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3 text-green">Fasilitas</h3>
+          <p>Fasilitas yang kami sediakan sangat lengkap dan nyaman.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fa-solid fa-laptop-code fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3 text-green">Modul</h3>
+          <p>Lebih dari 2000 modul tersedia ditempat kami.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fa-solid fa-dollar-sign fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3 text-green">Biaya</h3>
+          <p>Biaya yang sangat terjangkau.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fa-solid fa-chart-line fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="mt-3 text-green">Terarah</h3>
+          <p>Sistem pembelajaran kami cukup terarah dan mudah dipelajari.</p>
+        </div>
+
+        <div class="col-12 pt-3 mb-5">
+          <a href="#" class="btn text-white bg-red btn-lg " target="_blank"l role="button">Service Lainnya</a>
+        </div>
+      </div>
+    </section>
 
     <!-- Product -->
     <section id="product"></section>
@@ -96,7 +189,6 @@
 
     <!-- Footer -->
     <footer></footer>
-
 
     <!-- JQuery -->
     <script
@@ -114,5 +206,11 @@
 
     <!-- Bootstrap 4 JS-->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/2e9f86bd4d.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
