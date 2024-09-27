@@ -12,6 +12,8 @@
     <style>
       body {
         padding-top: 56px;
+        width: 100vw;
+        overflow-x: hidden;
       }
       .jumbotron {
         text-shadow: #000 1px 1px;
@@ -63,6 +65,16 @@
       .judul-service::after {
         left: 0.5em;
         margin-right: -50%;
+      }
+      .button-sekunder {
+        background-color: transparent;
+        border-color: #dbdbdb;
+        color: #0b9b6b;
+      }
+      .button-sekunder:hover{
+        background-color: #0b9b6b;
+        border-color: #dbdbdb;
+        color: #fff;
       }
     </style>
   </head>
@@ -137,7 +149,7 @@
     <section id="services" class="container-fluid service-style ">
       <div class="row text-center">
         <div class="col-12 pb-4">
-          <h2 class="display-4 judul-service">Mengapa Memilih Kami?</h2>
+          <h2 class="pt-3 display-4 judul-service">Mengapa Memilih Kami?</h2>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
           <span class="fa-stack fa-2x">
@@ -179,7 +191,55 @@
     </section>
 
     <!-- Product -->
-    <section id="product"></section>
+    <section id="product" class="container">
+      <div class="row text-center">
+        <div class="col-12 pb-4">
+          <h2 class="display-4 text-center mb-5">Produk Kami</h2>
+        </div>
+
+          <!-- Produk 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="images/img1.jpg" style="max-height: 400px;" alt="Produk 1" class="card-img-top">
+              <div class="card-body" style="min-height: 250px;">
+                <h4 class="card-title">Membuat Aplikasi Android berbasis Lokasi dengan Android Studio</h4>
+                <p class="card-text">Belajar membuat aplikasi android (Kontlin) berbasis lokasi dengan studi kasus aplikas presensi digital</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn button-sekunder">Lihat Detail & Harga</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produk 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="images/img2.jpg" style="max-height: 400px;" alt="Produk 2" class="card-img-top">
+              <div class="card-body" style="min-height: 250px;">
+                <h4 class="card-title">Membuat Sistem Informasi Perpustakaan Menggunakan Laravel 6</h4>
+                <p class="card-text">Belajar langkah demi langkah membangun sistem informasi perpustakaan dengan laravel 6</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn button-sekunder">Lihat Detail & Harga</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produk 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="images/img3.jpg" style="max-height: 400px;" alt="Produk 3" class="card-img-top">
+              <div class="card-body" style="min-height: 250px;">
+                <h4 class="card-title">membangun Website Toko Online berbasi CodeIgniter</h4>
+                <p class="card-text">Belajar membangun website toko online menggunakan Framework PHP CodeIgniter</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn button-sekunder">Lihat Detail & Harga</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
 
     <!-- About -->
     <section id="about"></section>
